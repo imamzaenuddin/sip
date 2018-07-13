@@ -1,0 +1,21 @@
+PROJECT SISTEM INFORMASI PRANATA INDONESIA :
+
+For Access :
+
+MySQL : 
+Host		: labs.pranataindonesia.ac.id:8100
+Username	: admin
+password	: mu6EV2XiwA
+
+ACCESS
+Host 		: labs.pranataindonesia.ac.id:8100
+User 		: mu6EV2XiwA
+password	: admin
+
+FTP : 
+Host 		: labs.pranataindonesia.ac.id/sip/
+User 		: Admin
+password	: mu6EV2XiwA
+Port 		: 23
+folder web	: sip
+folder db	: sip`
