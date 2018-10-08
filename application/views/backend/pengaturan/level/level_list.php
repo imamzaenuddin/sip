@@ -10,24 +10,17 @@
 
 				</div>
 				<div class="table-header">
-					Data List Menu
+					Data List Level
 				</div>
 				<div>
 					<table id="dynamic-table" class="table table-striped table-bordered table-hover">
 						<thead>
-							<tr>
-								<!-- <th class="center">
-									<label class="pos-rel">
-										<input type="checkbox" class="ace" />
-										<span class="lbl"></span>
-									</label>
-								</th> -->
-								<th>Wilayah Kode</th>
+							<tr>								
+								<th>Level Id</th>
 								<th>Nama</th>
-								<th></th>
-								<th class="hidden-480"></th>
-								<th class="hidden-480"></th>
-								<th class="hidden-480">NA</th>
+								<th class="hidden-480">Super User</th>
+								<th class="hidden-480">Tabel User</th>
+								<th class="hidden-480">Simbol</th>
 								<th class="hidden-480">Aksi</th>
 								<th></th>
 							</tr>
@@ -35,26 +28,19 @@
 				<tbody> 
 				<?php
                 	$no = 1;
-                	$data = $this->m_crud->getAll('m_wilayah');
+                	$data = $this->m_crud->getAll('m_level');
                 	foreach ($data->result_array() as $row){
                	?>
 					<tr>
-						<!-- <td class="center">
-							<label class="pos-rel">
-								<input type="checkbox" class="ace" value="<?php $row['MenuID'] ?>" />
-								<span class="lbl"></span>
-							</label>
-						</td>
-						 -->
-						<td><a href="#"><?=$row['WilayahKode'] ?></a></td>
+						
+						<td><a href="#"><?=$row['LevelID'] ?></a></td>
 						<td><a href="#"><?=$row['Nama'] ?></a></td>
-						<td></td>
-						<td></td>
-						<td></td>
 						<?php
 						$NA = ($row['NA']=='N')? '<span class="label label-sm label-info arrowed arrowed-righ">Aktif</span>' :'<span class="label label-sm label-warning">Non Aktif</span>';
 						?>
 						<td><?=$NA ?></td>					
+						<td></td>
+						<td></td>
 						<td>
 							<div class="hidden-sm hidden-xs action-buttons">
 								<a class="blue" href="#">
