@@ -29,9 +29,13 @@ class Pengaturan extends CI_Controller {
 		$this->template->display('backend/pengaturan/dashboard', $this->data);
 	}
 
+	public function web()
+	{
+		$this->template->display('backend/pengaturan/web/web_list', $this->data);
+	}	
 	public function menu()
 	{
-		$this->template->display('backend/pengaturan/menu_list', $this->data);
+		$this->template->display('backend/pengaturan/menu/menu_list', $this->data);
 	}		
 
 	public function jenispegawai()
