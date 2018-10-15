@@ -1,76 +1,74 @@
-<div class="hr hr-18 dotted hr-double"></div>
-	<div class="row">
-		<div class="col-xs-12">
-			<!-- PAGE CONTENT BEGINS -->
-			<form class="form-horizontal" role="form">
-				
-				<div class="form-group">
-					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Jenis Libur ID </label>
+<!-- PAGE CONTENT BEGINS -->
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Jenis LiburID </label>
 
-					<div class="col-sm-9">
-						<input type="text" id="form-field-1" placeholder="Jenis Libur ID" class="col-xs-10 col-sm-5" />
-					</div>
-				</div>
+        <div class="col-sm-9">
+            <input type="text" id="form-field-1" class="col-xs-10 col-sm-5" />
+        </div>
+    </div>
 
-				<div class="form-group">
-					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Kode ID </label>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> KodeID </label>
 
-					<div class="col-sm-9">
-						<input type="text" id="form-field-1" placeholder="Kode ID" class="col-xs-10 col-sm-5" />
-					</div>
-				</div>
-				
-				<div class="form-group">
-					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Nama </label>
+        <div class="col-sm-9">
+            <input type="text" id="form-field-1" class="col-xs-10 col-sm-5" />
+        </div>
+    </div>
 
-					<div class="col-sm-9">
-						<input type="text" id="form-field-1" placeholder="Nama" class="col-xs-10 col-sm-5" />
-					</div>
-				</div>
+    <div class="space-4"></div>
 
-				<div class="form-group">
-					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Warna </label>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> Nama </label>
 
-					<div class="col-sm-9">
-						<input type="text" id="form-field-1" placeholder="Warna" class="col-xs-10 col-sm-5" />
-					</div>
-				</div>
+        <div class="col-sm-9">
+            <input type="password" id="form-field-2" class="col-xs-10 col-sm-5" />
+            <span class="help-inline col-xs-12 col-sm-7">
+        </div>
+    </div>
 
-				<div class="form-group">
-					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Keterangan </label>
+    <div class="space-4"></div>
 
-					<div class="col-sm-9">
-						<input type="text" id="form-field-1" placeholder="Keterangan" class="col-xs-10 col-sm-5" />
-					</div>
-				</div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-field-2"> Keterangan </label>
 
-				<div class="form-group">
-					<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> NA</label>
+        <div class="col-sm-9">
+            <input type="password" id="form-field-2" class="col-xs-10 col-sm-5" />
+            <span class="help-inline col-xs-12 col-sm-7">
+        </div>
+    </div>
 
-					<div class="col-sm-9">
-						<input type="text" id="form-field-1" placeholder="NA" class="col-xs-10 col-sm-5" />
-					</div>
-				</div>
+     <div class="space-4"></div>
 
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="form-input-readonly"> Def </label>
 
-				<div class="clearfix form-actions">
-					<div class="col-md-offset-3 col-md-9">
-						<button class="btn btn-info" type="button">
-							<i class="ace-icon fa fa-check bigger-110"></i>
-							Simpan
-						</button>
+        <div class="col-sm-9">
+            <input type="text" class="col-xs-10 col-sm-5" id="form-input-readonly" />
+            <span class="help-inline col-xs-12 col-sm-7">
+                <label class="middle">
+                    <input class="ace" type="checkbox" id="id-disable-check" />
+                </label>
+        </div>
+    </div>
 
-						&nbsp; &nbsp; &nbsp;
-						<button class="btn" type="reset">
-							<i class="ace-icon fa fa-undo bigger-110"></i>
-							Batal
-						</button>
-					</div>
-				</div>
+    <div class="clearfix form-actions">
+        <div class="col-md-offset-3 col-md-9">
+            <button class="btn btn-info" type="button">
+                <i class="ace-icon fa fa-check bigger-110"></i>
+                Submit
+            </button>
 
+            <button class="btn" type="reset">
+                <i class="ace-icon fa fa-refresh bigger-110"></i>
+                Reset
+            </button>
 
-			</form>
-		</div>
-	</div>
-
-		
+            <button class="btn btn-warning" type="reset">
+                <i class="ace-icon fa fa-undo bigger-110"></i>
+                Back
+            </button>
+        </div>
+    </div>
+  
+</form>

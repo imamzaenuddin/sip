@@ -3,9 +3,8 @@
 			<div class="col-xs-12">
 				<div class="clearfix">
 					<div class="pull-right tableTools-container"></div>
-					<button class="btn btn-sm btn-primary" type="button">
-						<i class="ace-icon fa fa-check bigger-110"></i>
-						Tambah
+					<a type="button" class="btn btn-sm btn-primary" href="<?=base_URL()?>pengaturan/jeniskeluarform"> <i class="ace-icon fa fa-check bigger-110"></i>
+						Tambah </a>
 					</button>
 
 				</div>

@@ -34,6 +34,11 @@ class Pengaturan extends CI_Controller {
 		$this->template->display('backend/pengaturan/web/web_list', $this->data);
 	}
 
+	public function web_form()
+	{
+		$this->template->display('backend/pengaturan/web/web_form', $this->data);
+	}
+
 	public function menu()
 	{
 		$this->template->display('backend/pengaturan/menu/menu_list', $this->data);
@@ -43,10 +48,21 @@ class Pengaturan extends CI_Controller {
 	{
 		$this->template->display('backend/pengaturan/jenispegawai/jenispegawai_list', $this->data);
 	}	
+
+	public function jenispegawaiform()
+	{
+		$this->template->display('backend/pengaturan/jenispegawai/jenispegawai_form', $this->data);
+	}	
+
 	public function jeniskeluar()
 	{
 		$this->template->display('backend/pengaturan/jeniskeluar/jeniskeluar_list', $this->data);
 	}	
+
+	public function jeniskeluarform()
+	{
+		$this->template->display('backend/pengaturan/jeniskeluar/jeniskeluar_form', $this->data);
+	}
 
 	public function level()
 	{
@@ -64,6 +80,68 @@ class Pengaturan extends CI_Controller {
 			'mnu_list' => $this->m_crud->data('m_wilayah')
 		);
 		$this->load->view('backend/pengaturan/wilayah_list', $data);
+	}
+
+	public function jenissurat()
+	{
+		$this->template->display('backend/pengaturan/jenissurat/jenissurat_list', $this->data);
+	}
+
+	public function jenissuratform()
+	{
+		$this->template->display('backend/pengaturan/jenissurat/jenissurat_form', $this->data);
+	}
+
+
+	public function jenisdosen()
+	{
+		$this->template->display('backend/pengaturan/jenisdosen/jenisdosen_list', $this->data);
+	}
+	
+	public function jenisdosenform()
+	{
+		$this->template->display('backend/pengaturan/jenisdosen/jenisdosen_form', $this->data);
+	}
+
+	public function jenislibur()
+	{
+		$this->template->display('backend/pengaturan/jenislibur/jenislibur_list', $this->data);
+	}
+
+	public function jenisliburform()
+	{
+		$this->template->display('backend/pengaturan/jenislibur/jenislibur_form', $this->data);
+	}
+
+
+	public function jenispresensi()
+	{
+		$this->template->display('backend/pengaturan/jenispresensi/jenispresensi_list', $this->data);
+	}
+
+	public function jenispresensiform()
+	{
+		$this->template->display('backend/pengaturan/jenispresensi/jenispresensi_form', $this->data);
+	}
+
+	public function jenissekolah()
+	{
+		$this->template->display('backend/pengaturan/jenissekolah/jenissekolah_list', $this->data);
+	}
+
+	public function jenissekolahform()
+	{
+		$this->template->display('backend/pengaturan/jenissekolah/jenissekolah_form', $this->data);
+	}
+	
+	public function jenisjadwal()
+	{
+		$this->template->display('backend/pengaturan/jenisjadwal/jenisjadwal_list', $this->data);
+	}
+
+	public function jenisjadwalform()
+	{
+		$this->template->display('backend/pengaturan/jenisjadwal/jenisjadwal_form', $this->data);
 	}
 
 }

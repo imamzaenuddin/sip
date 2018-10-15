@@ -1,42 +1,39 @@
 <div class="hr hr-18 dotted hr-double"></div>
-<div class="row">
-			<div class="col-xs-12">
-				<div class="clearfix">
-					<div class="pull-right tableTools-container"></div>
-					<button class="btn btn-sm btn-primary" type="button">
-						<i class="ace-icon fa fa-check bigger-110"></i>
-						Tambah
-					</button>
-
+	<div class="ow">
+		<div class="col-xs-12">
+			<div class="clearfix">
+				<div class="pull-right tableTools-container"></div>
+					<a type="button" class="btn btn-sm btn-primary" href="<?=base_URL()?>pengaturan/jenispresensiform"> <i class="ace-icon fa fa-check bigger-110"></i>
+						Tambah </a>						
 				</div>
+				
 				<div class="table-header">
 					Data List Menu
 				</div>
-				<div>
-					<table id="dynamic-table" class="table table-striped table-bordered table-hover">
-						<thead>
-							<tr>
-								<th class="center">
-									<!-- <label class="pos-rel">
-										<input type="checkbox" class="ace" />
-										<span class="lbl"></span>
-									</label> -->
-								</th>
-								<th>Jenis Pegawai</th>
-								<th>Nama</th>
-								<th class="hidden-480">NA</th>
-								<th class="hidden-480"></th>
-								<th class="hidden-480"></th>
-								<th class="hidden-480">Aksi</th>
-								<th></th>
-							</tr>
-						</thead>
-				<tbody> 
-				<?php
-                	$no = 1;
-                	$data = $this->m_crud->getAll('m_jenispegawai');
-                	foreach ($data->result_array() as $row){
-               	?>
+			</div>
+			<table id="dynamic-table" class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>
+						<th class="center">
+							<!-- <label class="pos-rel">
+								<input type="checkbox" class="ace" />
+								<span class="lbl"></span>
+							</label> -->
+						</th>
+						<th>Jenis Pegawai</th>
+						<th>Nama</th>
+						<th class="hidden-480">NA</th>
+						<th class="hidden-480">Aksi</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<?php
+						$no = 1;
+						$data = $this->m_crud->getAll('m_jenispegawai');
+						foreach ($data->result_array() as $row){
+					?>
+					
 					<tr>
 						<td class="center">
 							<label class="pos-rel">
@@ -47,12 +44,12 @@
 
 						<td><a href="#"><?=$row['JenisPegawaiID'] ?></a></td>
 						<td><a href="#"><?=$row['Nama'] ?></a></td>
+
 						<?php
-						$NA = ($row['NA']=='N')? '<span class="label label-sm label-info arrowed arrowed-righ">Aktif</span>' :'<span class="label label-sm label-warning">Non Aktif</span>';
+							$NA = ($row['NA']=='N')? '<span class="label label-sm label-info arrowed arrowed-righ">Aktif</span>' :'<span class="label label-sm label-warning">Non Aktif</span>';
 						?>
+
 						<td><?=$NA ?></td>					
-						<td></td>
-						<td></td>
 						<td>
 							<div class="hidden-sm hidden-xs action-buttons">
 								<a class="blue" href="#">
@@ -102,10 +99,10 @@
 								</div>
 							</div>
 						</td>
-						<td></td>
 					</tr>
 
 				<?php $no++; } ?>	
+
 				</tbody>
 			</table>
 		</div>
